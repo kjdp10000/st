@@ -224,8 +224,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ MODKEY,               XK_C,           clipcopy,       {.i =  0} },
-	{ MODKEY,               XK_V,           clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
@@ -236,8 +236,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -2} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -2} },
 	{ MODKEY,               XK_bracketleft, chgalpha,       {.f = -1} }, /* Decrease opacity */
-	{ MODKEY|ShiftMask,     XK_braceright,  chgalpha,       {.f = +1} }, /* Increase opacity */
-	{ MODKEY,               XK_bracketright,chgalpha,       {.f =  0} }, /* Reset opacity */
+	{ MODKEY,               XK_bracketright,chgalpha,       {.f = +1} }, /* Increase opacity */
+	{ MODKEY|ShiftMask,     XK_braceright,  chgalpha,       {.f = 0} }, /* Reset opacity */
 };
 
 /*
